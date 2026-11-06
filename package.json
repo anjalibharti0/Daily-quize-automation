@@ -1,0 +1,15 @@
+{
+  "name": "yuvahive-quiz-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "YuvaHive daily coding quiz bot with an admin dashboard for WhatsApp publishing",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n api,web -c green,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
